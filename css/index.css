@@ -1,0 +1,357 @@
+body{
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    color: #666;
+    background-color: #f4f4f4;
+}
+/* <!-- 最顶端图片 --> */
+.top{
+    height: 80px;
+    background:rgb(215, 239, 255) url('../images/top.jpg') no-repeat top center;
+}
+.container{
+    width: 1190px;
+    margin: 0 auto;
+}
+.close{
+    float: right;
+    cursor: pointer;
+}
+.shortcut {
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+/* 顶部区域 */
+.header{
+    background: #fff;
+    height: 140px;
+    border-bottom: 1px solid #ddd;
+    /* overflow: hidden; */
+}
+.w{
+    /* overflow: hidden; */
+}
+.logo{
+    width: 190px;
+    height: 120px;
+    background: url('../images/sprite.png');
+    margin-top: 10px;
+    float: left;
+}
+.center{
+    float: left;
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e2231a;
+    background: #fff;
+    margin-top: 30px;
+    margin-left: 100px;
+    position: relative;
+}
+.btn{
+    width: 58px;
+    height: 32px;
+    /* line-height: 32px; */
+    border: none;
+    background-color: #e1251b;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    float: right;
+    text-align: center;
+}
+.search{
+    border: 0;
+    outline: none;
+    padding: 2px 44px 2px 17px;
+    width: 425px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+}
+/* 下拉层搜索 */
+.list{
+    display: none;
+    width:488px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    top:34px;
+    left:-1px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 2px 1px rgb(0 0 0 / 20%);
+    box-shadow: 1px 2px 1px rgb(0 0 0 / 20%);
+}
+.list li{
+    padding:4px 8px;
+    cursor: pointer;
+}
+.list li:hover{
+    background-color: #f5f5f5;
+}
+
+/* 搜索框吸顶 */
+.search-fixed{
+ background-color: #fff;
+ position: fixed;
+ height: 52px;
+ /* top:0; */
+ top:-52px;
+ left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 2px solid #f10214;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+    transition: top 1s;
+}
+.search-fixed .center{
+    margin-top: 10px;
+}
+.search-fixed .hide-logo{
+    background-image: url('../images/sprite.png');
+    background-position: 0 -120px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* display: none; */
+    width: 125px;
+    height: 40px;
+    text-indent: -999px;
+    float: left;
+}
+
+/* 轮播图区域 */
+.my-banner{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 190px;
+    height: 470px;
+    background-color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.banner{
+    margin-right: 10px;
+    width: 590px;
+    height: 470px;
+    position: relative;
+    float: left;
+}
+.right{
+    margin-right: 0;
+}
+.next,.prev{
+    position: absolute;
+    top: 50%;
+    border-radius: 0;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #d9d9d9;
+    background-color: rgba(0,0,0,.15);
+    margin-top: -20px;
+    font-size: 20px;
+    z-index: 2;
+}
+.next{
+    right: 0;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.prev{
+    left: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.banner-dian{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.banner-dian li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+    border: 1px solid rgba(0,0,0,.05);
+    background: rgba(248, 248, 248, 0.6);
+}
+.banner-dian .active{
+    background-color: #fff;
+}
+
+/* 主体内容 */
+.main{
+    height: 5000px;
+}
+.main .item{
+    margin-bottom: 20px;
+}
+.miaosha{
+    height: 500px;
+    background: skyblue;
+}
+.tese{
+    height: 700px;
+    background-color: pink;
+}
+.pindao{
+    height: 1000px;
+    background-color: rgb(249, 235, 73);
+}
+.tuijian{
+    height: 1300px;
+    background-color:rgba(5, 101, 130, 0.484);
+}
+/* 楼宇导航 */
+.louceng{
+    position: fixed;
+    left:50%;
+    top:700px;
+    margin-left: 620px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+.louceng a{
+    padding: 10px;
+    width: 36px;
+    display:block;
+    color: #666;
+    position: relative;
+  
+}
+.louceng a:hover{
+    background: #c81623;
+    color: #fff;
+}
+.louceng a::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #eee;
+    bottom: 0;
+    left:10px;
+    width: 36px;
+    z-index: -1;
+}
+.louceng a:last-child::after{
+    border-bottom: none;
+}
+/* 高亮字体 */
+.louceng .active{
+    color:#c81623;
+}
+
+/* 返回顶部 */
+.louceng #go-top{
+    display: none;
+}
+
+/* 京东秒杀 */
+.time{
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 260px;
+    color: #fff;
+    background-color: #e83632;
+    background-image: url('../images/miaosha.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.countdown-title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 31px;
+}
+.countdown-desc {
+    margin-top: 90px;
+    font-size: 14px;
+    text-align: center;
+}
+.countdown-desc strong {
+    font-size: 18px;
+    padding-right: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -1px;
+}
+.countdown-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    display: block;
+}
+.timmer {
+    color: #333;
+    font-weight: 700;
+}
+.countdown-main .timmer__unit {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #2f3430;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+.timmer__unit:last-child{
+    margin-right: 0;
+}
+.timmer__unit:last-child::after {
+    content: "";
+}
+.timmer__unit::after{
+    content: ":";
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: -20px;
+    width: 20px;
+}
+/* tab切换 */
+.nav{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.nav li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding:4px 10px;
+    cursor: pointer;
+}
+.nav-box{
+    width: 600px;
+    height: 320px;
+    background: #fff;
+    overflow: hidden;
+}
+.nav-box>div {
+    display: none;
+}
+.nav-box>.show{
+    display: block;
+}
+.nav .active{
+    background-color: orange;
+    color: #fff;
+}
+
+/* 第二个tab */
+.my-box >div{
+    display: none;
+}
